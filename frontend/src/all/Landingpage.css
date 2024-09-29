@@ -1,0 +1,13 @@
+.wave-divider {
+  position: relative;
+  height: 80px;
+  background-color: white;
+}
+
+.quote-divider {
+  background-color: #e0f2fe; /* Light blue background */
+}
+
+.gradient-divider {
+  margin: 40px 0;
+}

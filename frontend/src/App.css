@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+.header {
+    @apply text-[25px] font-[800] text-darkGreen;
+}
+
+.input::placeholder {
+    font-size: 17px;
+    font-weight: bold;
+    color: #D0D0D0
+}
+
+.buttomShadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#commentField::placeholder {
+    color: #D0D0D0;
+    font-size: 14px;
+}
+
+
+/*stars rating*/
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 1.1em;
+    font-size: 3em;
+    color: #199B8A;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "★";
+    position: absolute;
+    opacity: 0.3;
+}
+
+.rating>input:checked~label::before {
+    opacity: 1;
+}
+
+.rating>label:hover~label::before,
+.rating>label:hover::before {
+    opacity: 1 !important;
+}
+/*end stars rating*/
+
+/*switch button*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-btn {
+    width: 84px;
+    height: 32px;
+    position: relative;
+    display: inline-block;
+}
+
+.toggle-btn input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    outline: none;
+    background-color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.toggle-btn input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #199B8A;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+    transition: width 300ms ease-in-out;
+}
+
+.toggle-btn .toggle-text {
+    position: absolute;
+    /* width: 40px;
+    height: 20px; */
+    top: 4px;
+    left: 6px;
+    /* transform: translateY(-50%); */
+    background-color: transparent;
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.toggle-btn .toggle-text::before {
+    content: "OFF";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #199B8A;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 300ms ease-in-out;
+    transition-delay: 100ms;
+    font-family: sans-serif;
+}
+
+.toggle-btn input[type="checkbox"]:checked::before {
+    width: 100%;
+}
+
+.toggle-btn input[type="checkbox"]:checked~.toggle-text {
+    left: 45px;
+}
+
+.toggle-btn input[type="checkbox"]:checked~.toggle-text::before {
+    content: "ON";
+    color: white;
+}
+/*end switch button*/
+
+.card {
+    transition: transform 0.3s ease-out;
+}
