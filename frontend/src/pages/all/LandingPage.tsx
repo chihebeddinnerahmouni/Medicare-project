@@ -3,7 +3,7 @@ import ClinicList from "@/containers/landing/ClinicsList";
 import DoctorList from "@/containers/landing/DoctorList";
 import Footer from "@/components/ui/Footer";
 import Hero from "@/containers/landing/Hero";
-import Navbar from "@/components/custom/Navbar";
+import Navbar from "@/components/ui/Navbar";
 import NurseList from "@/containers/landing/NurseList";
 import "./Landingpage.css";
 

@@ -3,7 +3,7 @@ import "./App.css";
 import 'ldrs/cardio'
 import { Navigate, Outlet } from "react-router-dom";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
-import Navbar from "./components/custom/Navbar";
+import Navbar from "./components/ui/Navbar";
 
 
 declare global {

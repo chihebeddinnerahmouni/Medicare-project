@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
-import { Button } from "../ui/shadecn/button";
-import { UserDropDown } from "./UserDropDown";
+import { Button } from "./shadecn/button";
+import { UserDropDown } from "../navbar/UserDropDown";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
