@@ -2,7 +2,7 @@ import  { useRef, useContext } from "react";
 import axios from "axios";
 // import { toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
-import { NurseDataContext } from "../../../../nurse/NurseRoot";
+import { NurseDataContext } from "../../../../pages/nurse/NurseRoot";
 
 
 

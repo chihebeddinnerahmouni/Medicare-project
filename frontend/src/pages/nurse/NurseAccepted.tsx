@@ -1,4 +1,4 @@
-import imagee from "../assets/images/anonymous.png";
+import imagee from "../../assets/images/anonymous.png";
 import UserInfos from "@/components/custom/nurse/AcceptedPage/UserInfos";
 import Calculation from "@/components/custom/User/user-nurses/accepted page/Calculation";
 import { FaRoad } from "react-icons/fa6";

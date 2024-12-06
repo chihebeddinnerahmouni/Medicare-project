@@ -3,7 +3,7 @@ import App from "./App.tsx";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
-import LandingPage from "./all/LandingPage.tsx";
+import LandingPage from "./pages/all/LandingPage.tsx";
 //user
 import UserRoot from "./user/UserRoot.tsx";
 import SetReqDetailsPage from "./user/user-nurses/SetReqDetailsPage.tsx";
@@ -23,13 +23,14 @@ import Arrived from "./user/user-parmacies/Arrived.tsx";
 
 
 //nurse
-import NurseRoot from "./nurse/NurseRoot.tsx";
-import NurseInActive from "./nurse/WorkStatusPage.tsx";
-import NurseAccepted from "./nurse/NurseAccepted.tsx";
-import NurseRatePage from "./nurse/NurseRatePage.tsx";
-import NurseCancelPage from "./nurse/NurseCancelPage.tsx";
-import CanceledByUser from "./nurse/Canceled-by-user.tsx";
-import SignalePage from "./nurse/SignalePage.tsx";
+import NurseRoot from "./pages/nurse/NurseRoot.tsx";
+import NurseInActive from "./pages/nurse/WorkStatusPage.tsx";
+import NurseAccepted from "./pages/nurse/NurseAccepted.tsx";
+import NurseRatePage from "./pages/nurse/NurseRatePage.tsx";
+import NurseCancelPage from "./pages/nurse/NurseCancelPage.tsx";
+import CanceledByUser from "./pages/nurse/Canceled-by-user.tsx";
+import SignalePage from "./pages/nurse/SignalePage.tsx";
+import Doctors from "./pages/doctors/Doctors.tsx";
 
 
 const router = createBrowserRouter([
@@ -60,7 +61,11 @@ const router = createBrowserRouter([
       { path: "/nurse-cancel", element: <NurseRoot><NurseCancelPage /></NurseRoot> },
       { path: "/nurse-canceled-by-patient", element: <NurseRoot><CanceledByUser /></NurseRoot> },
       { path: "/nurse-signale", element: <NurseRoot><SignalePage /></NurseRoot> },
+
+      // doctors
+      { path: "/doctors", element:<Doctors />  },
     ],
+
     
   },
   {
@@ -77,13 +82,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <KindeProvider
-    // clientId={import.meta.env.VITE_KINDE_CLIENT_ID}
     clientId="e031f86a2df74dc0a431f158698e0a4d"
-    // domain={import.meta.env.VITE_KINDE_DOMAIN}
     domain="https://medicareapp.kinde.com"
-    // redirectUri={import.meta.env.VITE_KINDE_REDIRECT_URI}
     redirectUri="http://localhost:5173"
-    // redirectUri="https://ec24-105-103-0-120.ngrok-free.app/user-pharmacy/all-pharmacies"
     logoutUri={import.meta.env.VITE_KINDE_LOGOUT_URI}
   >
     <RouterProvider router={router} />

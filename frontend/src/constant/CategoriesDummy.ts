@@ -2,6 +2,7 @@ const CategoriesDummy = [
   {
     attributes: {
       Name: "Nurse",
+      url: "/nurses",
       Icon: {
         data: {
           attributes: {
@@ -14,6 +15,7 @@ const CategoriesDummy = [
   {
     attributes: {
       Name: "Doctor",
+      url: "/doctors",
       Icon: {
         data: {
           attributes: {
@@ -26,6 +28,7 @@ const CategoriesDummy = [
   {
     attributes: {
       Name: "Clinics",
+      url: "/clinics",
       Icon: {
         data: {
           attributes: {
@@ -38,6 +41,7 @@ const CategoriesDummy = [
   {
     attributes: {
       Name: "Pharmacy",
+      url: "/pharmacies",
       Icon: {
         data: {
           attributes: {
@@ -51,6 +55,7 @@ const CategoriesDummy = [
   {
     attributes: {
       Name: "Dentiste",
+      url: "/dentists",
       Icon: {
         data: {
           attributes: {
@@ -63,6 +68,7 @@ const CategoriesDummy = [
   {
     attributes: {
       Name: "More",
+      url: "/more",
       Icon: {
         data: {
           attributes: {
@@ -74,6 +80,6 @@ const CategoriesDummy = [
   },
 ];
 
-export function getCategoryList():Array<{ attributes: { Name: string; Icon: { data: { attributes: { url: string } } } } }> {
+export function getCategoryList(): Array<{ attributes: { Name: string; url: string; Icon: { data: { attributes: { url: string } } } } }> {
   return CategoriesDummy;
 }

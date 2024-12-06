@@ -1,8 +1,7 @@
-
+import Footer from "./components/ui/Footer";
 import "./App.css";
 import 'ldrs/cardio'
 import { Navigate, Outlet } from "react-router-dom";
-import Header from "./components/custom/Header";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 import Navbar from "./components/custom/Navbar";
 
@@ -36,9 +35,9 @@ function App() {
   } else {
     return (
       <>
-        <Header />
-        {/* <Navbar /> */}
+        <Navbar />
         <Outlet />
+        {/* <Footer /> */}
       </>
     );
   }

@@ -1,24 +1,19 @@
-import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
+// import { Link } from "react-router-dom";
+// import { Button } from "../ui/button";
+
+import Button  from "../../components/ui/buttons/Button";
 
 const Hero = () => {
   return (
-    <section>
-      <div className="mt-12 mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+    
+      <section className="w-full bg-green200 grid grid-cols-1 place-items-center gap-8 lg:grid-cols-2 xl:gap-16">
             <img
               alt=""
               src="/heroImage.png"
-              width={800}
-              height={800}
-              className="absolute inset-0 h-full
-          rounded-3xl 
-          w-full object-cover"
+              className="rounded-3xl bg-red200 max-h-[500px] object-cover lg:h-auto"
             />
-          </div>
 
-          <div className="lg:py-24">
+          <div className="bg-yellow200 ">
             <h2 className="text-4xl font-bold sm:text-4xl">
               Find & Book
               <span className="text-mainGreen"> Appointment </span>
@@ -35,13 +30,16 @@ const Hero = () => {
               healthcare services at your convenience.
             </p>
 
-            <Button className="mt-10 bg-mainGreen text-white">
+            {/* <Button className="mt-10 bg-mainGreen text-white">
               <Link to="/services">Explore Now</Link>
-            </Button>
-          </div>
+            </Button> */}
+        <div className="button mt-10">
+         <Button text={"Explore Now"} /> 
         </div>
-      </div>
-    </section>
+        
+          
+          </div>
+      </section>
   );
 };
 

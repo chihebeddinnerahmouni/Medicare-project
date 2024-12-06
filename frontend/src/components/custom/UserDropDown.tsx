@@ -1,5 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/shadecn/avatar";
+import { Button } from "@/components/ui/shadecn/button";
+// import Button  from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,7 +8,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/shadecn/dropdown-menu";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 
 interface iAppProps {
@@ -39,7 +40,7 @@ export function UserDropDown({ email, name, userImage }: iAppProps) {
             className="hover:text-mainGreen hover:outline-none hover:ring-2 hover:ring-mainGreen hover:ring-opacity-50 transition-all duration-300"
             onClick={logout}
           >
-            Log out
+            Log out 
           </Button>
         </DropdownMenuItem>
       </DropdownMenuContent>

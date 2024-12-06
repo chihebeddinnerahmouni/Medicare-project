@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import WhiteButton from "../../WhiteButton";
-import { NurseDataContext } from "@/nurse/NurseRoot";
+import { NurseDataContext } from "@/pages/nurse/NurseRoot";
 
 
 const ReqTaken = () => {

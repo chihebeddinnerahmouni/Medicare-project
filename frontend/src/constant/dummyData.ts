@@ -1,12 +1,12 @@
 // Define types for doctors, nurses, and clinics
 
 export interface Doctor {
-  id: number;
+    id: number;
   name: string;
   image: string;
-  category: string;
-  year_of_experience: number;
+  experience: number;
   address: string;
+  specialite: string;
 }
 
 export interface Nurse {
@@ -15,6 +15,7 @@ export interface Nurse {
   image: string;
   experience: number;
   address: string;
+  specialite: string;
 }
 
 export interface Clinic {
@@ -31,48 +32,48 @@ export const doctorsMockData: Doctor[] = [
     id: 1,
     name: "Dr. Ahmed Ben Salah",
     image: "/doctor1.jpg",
-    category: "Cardiologue",
-    year_of_experience: 15,
+    specialite: "Cardiologue",
+    experience: 15,
     address: "Rue Emir Abdelkader, Alger, Algérie",
   },
   {
     id: 2,
     name: "Dr. Fatima Ould Khelifa",
     image: "/doctor2.jpg",
-    category: "Pédiatre",
-    year_of_experience: 10,
+    specialite: "Pédiatre",
+    experience: 10,
     address: "Avenue Didouche Mourad, Oran, Algérie",
   },
   {
     id: 3,
     name: "Dr. Youssef Bouzid",
     image: "/doctor3.jpg",
-    category: "Neurologue",
-    year_of_experience: 20,
+    specialite: "Neurologue",
+    experience: 20,
     address: "Route de Constantine, Annaba, Algérie",
   },
   {
     id: 4,
     name: "Dr. Imane Zighoud",
     image: "/doctor4.jpg",
-    category: "Dermatologue",
-    year_of_experience: 12,
+    specialite: "Dermatologue",
+    experience: 12,
     address: "Boulevard Zighoud Youcef, Constantine, Algérie",
   },
   {
     id: 5,
     name: "Dr. Karim El Hadj",
     image: "/doctor5.jpg",
-    category: "Chirurgien",
-    year_of_experience: 18,
+    specialite: "Chirurgien",
+    experience: 18,
     address: "Rue Frantz Fanon, Blida, Algérie",
   },
   {
     id: 6,
     name: "Dr. Amina Amrani",
     image: "/doctor6.jpg",
-    category: "Gynécologue",
-    year_of_experience: 8,
+    specialite: "Gynécologue",
+    experience: 8,
     address: "Rue Khemisti, Sétif, Algérie",
   },
 ];
@@ -81,45 +82,51 @@ export const doctorsMockData: Doctor[] = [
 export const nursesMockData: Nurse[] = [
   {
     id: 1,
-    name: "Nurse Latifa Cherif",
+    name: "Latifa Cherif",
     image: "/nurse1.jpg",
     experience: 6,
     address: "Rue Larbi Ben M'hidi, Alger, Algérie",
+    specialite: "Infirmière en chef",
   },
   {
     id: 2,
-    name: "Nurse Yamina Boualem",
+    name: "Yamina Boualem",
     image: "/nurse2.webp",
     experience: 9,
     address: "Rue des Martyrs, Oran, Algérie",
+    specialite: "Infirmière en chef",
   },
   {
     id: 3,
-    name: "Nurse Rachida Djedid",
+    name: "Rachida Djedid",
     image: "/nurse3.webp",
     experience: 4,
     address: "Boulevard Che Guevara, Constantine, Algérie",
+    specialite: "Infirmière en chef",
   },
   {
     id: 4,
-    name: "Nurse Salim Kader",
+    name: "Salim Kader",
     image: "/nurse4.jpg",
     experience: 5,
     address: "Rue Ahmed Zabana, Tlemcen, Algérie",
+    specialite: "Infirmière en chef",
   },
   {
     id: 5,
-    name: "Nurse Meriem Lounis",
+    name: "Meriem Lounis",
     image: "/nurse5.jpg",
     experience: 7,
     address: "Avenue Mohamed Khemisti, Annaba, Algérie",
+    specialite: "Infirmière en chef",
   },
   {
     id: 6,
-    name: "Nurse Sofiane Boudjellal",
+    name: "Sofiane Boudjellal",
     image: "/nurse6.jpg",
     experience: 8,
     address: "Rue Aissat Idir, Sétif, Algérie",
+    specialite: "Infirmière en chef",
   },
 ];
 

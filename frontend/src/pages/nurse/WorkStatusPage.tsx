@@ -15,7 +15,7 @@ declare global {
 
 const WorkStatusPage = () => {
 
-  const { isWork, isTaken, reqTaken, setReqTaken, setIsTaken, setRequestData } = useContext(NurseDataContext);
+  const { isWork, isTaken, reqTaken, setIsTaken } = useContext(NurseDataContext);
   const [state, setState] = useState("Hors service");
   const [disc, setDisc] = useState("Vous êtes maintenant hors service, activez l'état du service si vous souhaitez commencer à travailler.");
   const host = import.meta.env.VITE_HOST;

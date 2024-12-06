@@ -1,5 +1,6 @@
 import { clinicsMockData, Clinic } from "../../constant/dummyData"; // Import dummy data
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import ClinicCard from "../../components/ui/cards/ClinicCard";
 
 interface DoctorListProps {
   ClinicsList?: Clinic[];
@@ -11,8 +12,8 @@ const ClinicList: React.FC<DoctorListProps> = ({
   heading = "Popular Clinics",
 }) => {
   return (
-    <div className="mb-10 px-8">
-      <h2 className="font-bold text-xl">{heading}</h2>
+    <section>
+      <h2 className="font-bold text-xl xl:text-2xl">{heading}</h2>
 
       <div
         className="grid grid-cols-2 
@@ -20,7 +21,8 @@ const ClinicList: React.FC<DoctorListProps> = ({
         gap-7 mt-4
         lg:grid-cols-4"
       >
-        {ClinicsList.length > 0
+        <ClinicCard list={ClinicsList} />
+        {/* {ClinicsList.length > 0
           ? ClinicsList.map((clinic, index) => (
               <div
                 className="border-[1px] rounded-lg p-3
@@ -67,9 +69,9 @@ const ClinicList: React.FC<DoctorListProps> = ({
             w-full rounded-lg animate-pulse"
                 key={index}
               />
-            ))}
+            ))} */}
       </div>
-    </div>
+    </section>
   );
 };
 

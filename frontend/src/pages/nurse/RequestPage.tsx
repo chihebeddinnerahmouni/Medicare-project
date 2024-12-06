@@ -1,5 +1,5 @@
 import { useEffect, useContext, useState } from 'react';
-import image from '../assets/images/anonymous.png';
+import image from '../../assets/images/anonymous.png';
 import UserInfos from '@/components/custom/nurse/AcceptedPage/UserInfos';
 // import Map from '@/components/custom/nurse/AcceptedPage/Map';
 import Calculation from '@/components/custom/User/user-nurses/accepted page/Calculation';
