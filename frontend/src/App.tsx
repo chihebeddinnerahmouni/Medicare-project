@@ -37,7 +37,7 @@ function App() {
       <>
         <Navbar />
         <Outlet />
-        {/* <Footer /> */}
+        <Footer />
       </>
     );
   }
