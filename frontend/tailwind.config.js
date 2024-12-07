@@ -32,6 +32,7 @@ module.exports = {
       colors: {
         mainGreen: "#199B8A",
         darkGreen: "#003C43",
+        writingGrey: "#9499A6",
         creme: "#EFF2F9",
         secondaryWritingGrey: "#A8ADB6",
         EmptyBackgroundGrey: "#F4F4F4",
@@ -42,7 +43,13 @@ module.exports = {
       },
       boxShadow: {
         panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;",
-        hardShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;",
+        // hardShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;",
+
+      hoverShadow: "0px 1px 4px rgba(0, 0, 0, 0.24)",
+      hardShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)", 
+      smallShadow: "2px 0px 4px rgba(0, 0, 0, 0.2)", 
+      smallHoverShadow: "4px -1px 4px rgba(0, 0, 0, 0.2)", 
+      bottomShadow: "0 5px 7px -5px rgba(0, 0, 0, 0.2)", 
       },
       borderRadius: {
         50: "50px",

@@ -32,6 +32,7 @@ import CanceledByUser from "./pages/nurse/Canceled-by-user.tsx";
 import SignalePage from "./pages/nurse/SignalePage.tsx";
 import Doctors from "./pages/doctors/Doctors.tsx";
 import Clinics from "./pages/clinics/Clinics.tsx";
+import ClinicDetails from "./pages/clinics/ClinicDetails.tsx";
 
 
 const router = createBrowserRouter([
@@ -150,7 +151,6 @@ const router = createBrowserRouter([
       },
 
       //nurses
-      // { path: "/nurse-profile", element:<NurseRoot><RatePage /></NurseRoot>  },
       {
         path: "/nurse-waiting",
         element: (
@@ -205,6 +205,7 @@ const router = createBrowserRouter([
 
       // clinics
       { path: "/clinics", element: <Clinics /> },
+      { path: "/clinics/clinic-details/:clinicId", element: <ClinicDetails /> },
     ],
   },
   {

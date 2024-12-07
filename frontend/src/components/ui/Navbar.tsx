@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     // <>
     //   <div>
-    <nav className="bg-gradient-to-r from-green-400 to-blue-500 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 shadow-lg rounded-b-10">
+    <nav className="bg-gradient-to-r from-green-400 to-blue-500 fixed w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600 shadow-lg rounded-b-10 z-20">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
           href="https://google.com/"
