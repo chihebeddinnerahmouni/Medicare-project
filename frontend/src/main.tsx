@@ -31,6 +31,7 @@ import NurseCancelPage from "./pages/nurse/NurseCancelPage.tsx";
 import CanceledByUser from "./pages/nurse/Canceled-by-user.tsx";
 import SignalePage from "./pages/nurse/SignalePage.tsx";
 import Doctors from "./pages/doctors/Doctors.tsx";
+import Clinics from "./pages/clinics/Clinics.tsx";
 
 
 const router = createBrowserRouter([
@@ -38,35 +39,173 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       //users
-      { path: "/user-nurse/set-details", element: <UserRoot> <SetReqDetailsPage /> </UserRoot>},
-      { path: "/user-nurse/result", element: <UserRoot> <ResultPage /> </UserRoot>},
-      { path: "/user-nurse/waiting", element: <UserRoot> <WaitToBeAccepted /> </UserRoot>},
-      { path: "/user-nurse/accepted", element: <UserRoot> <AcceptedPage /> </UserRoot>},
-      { path: "/user-nurse/cancel", element: <UserRoot> <CancelPage/></UserRoot> },
-      { path: "/user-nurse/rating", element: <UserRoot><RatePage /></UserRoot> },
-      { path: "/user-nurse/signal", element: <UserRoot><SignalPage /></UserRoot> },
-      { path: "/user-nurse/canceled-by-nurse", element: <UserRoot><CanceledByNurse /></UserRoot> },
-      { path: "/user-pharmacy/all-pharmacies", element: <UserRoot><AllPharmaciesPage /></UserRoot> },
-      { path: "/user-pharmacy/one-pharmacy", element: <UserRoot><OnePharmacyPage /></UserRoot> },
-      { path: "/user-pharmacy/set-details", element: <UserRoot><SetPositionPage /></UserRoot> },
-      { path: "/user-pharmacy/show-directions", element: <UserRoot><OnTheWay /></UserRoot> },
-      { path: "/user-pharmacy/arrived", element: <UserRoot><Arrived /></UserRoot> },
+      {
+        path: "/user-nurse/set-details",
+        element: (
+          <UserRoot>
+            {" "}
+            <SetReqDetailsPage />{" "}
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/result",
+        element: (
+          <UserRoot>
+            {" "}
+            <ResultPage />{" "}
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/waiting",
+        element: (
+          <UserRoot>
+            {" "}
+            <WaitToBeAccepted />{" "}
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/accepted",
+        element: (
+          <UserRoot>
+            {" "}
+            <AcceptedPage />{" "}
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/cancel",
+        element: (
+          <UserRoot>
+            {" "}
+            <CancelPage />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/rating",
+        element: (
+          <UserRoot>
+            <RatePage />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/signal",
+        element: (
+          <UserRoot>
+            <SignalPage />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-nurse/canceled-by-nurse",
+        element: (
+          <UserRoot>
+            <CanceledByNurse />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-pharmacy/all-pharmacies",
+        element: (
+          <UserRoot>
+            <AllPharmaciesPage />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-pharmacy/one-pharmacy",
+        element: (
+          <UserRoot>
+            <OnePharmacyPage />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-pharmacy/set-details",
+        element: (
+          <UserRoot>
+            <SetPositionPage />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-pharmacy/show-directions",
+        element: (
+          <UserRoot>
+            <OnTheWay />
+          </UserRoot>
+        ),
+      },
+      {
+        path: "/user-pharmacy/arrived",
+        element: (
+          <UserRoot>
+            <Arrived />
+          </UserRoot>
+        ),
+      },
 
-      
       //nurses
       // { path: "/nurse-profile", element:<NurseRoot><RatePage /></NurseRoot>  },
-      { path: "/nurse-waiting", element:<NurseRoot><NurseInActive /></NurseRoot>  },
-      { path: "/nurse-accepted", element:<NurseRoot><NurseAccepted /></NurseRoot>  },
-      { path: "/nurse-feedback", element: <NurseRoot><NurseRatePage /></NurseRoot> },
-      { path: "/nurse-cancel", element: <NurseRoot><NurseCancelPage /></NurseRoot> },
-      { path: "/nurse-canceled-by-patient", element: <NurseRoot><CanceledByUser /></NurseRoot> },
-      { path: "/nurse-signale", element: <NurseRoot><SignalePage /></NurseRoot> },
+      {
+        path: "/nurse-waiting",
+        element: (
+          <NurseRoot>
+            <NurseInActive />
+          </NurseRoot>
+        ),
+      },
+      {
+        path: "/nurse-accepted",
+        element: (
+          <NurseRoot>
+            <NurseAccepted />
+          </NurseRoot>
+        ),
+      },
+      {
+        path: "/nurse-feedback",
+        element: (
+          <NurseRoot>
+            <NurseRatePage />
+          </NurseRoot>
+        ),
+      },
+      {
+        path: "/nurse-cancel",
+        element: (
+          <NurseRoot>
+            <NurseCancelPage />
+          </NurseRoot>
+        ),
+      },
+      {
+        path: "/nurse-canceled-by-patient",
+        element: (
+          <NurseRoot>
+            <CanceledByUser />
+          </NurseRoot>
+        ),
+      },
+      {
+        path: "/nurse-signale",
+        element: (
+          <NurseRoot>
+            <SignalePage />
+          </NurseRoot>
+        ),
+      },
 
       // doctors
-      { path: "/doctors", element:<Doctors />  },
-    ],
+      { path: "/doctors", element: <Doctors /> },
 
-    
+      // clinics
+      { path: "/clinics", element: <Clinics /> },
+    ],
   },
   {
     path: "/test",
