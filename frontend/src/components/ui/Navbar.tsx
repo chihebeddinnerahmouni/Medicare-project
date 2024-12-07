@@ -4,6 +4,7 @@ import { Button } from "./shadecn/button";
 import { UserDropDown } from "../navbar/UserDropDown";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 
@@ -90,37 +91,37 @@ const Navbar = () => {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="block py-2 px-3 text-white rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-300 md:p-0"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="block py-2 px-3 text-white rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-300 md:p-0"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="block py-2 px-3 text-white rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-300 md:p-0"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="block py-2 px-3 text-white rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-300 md:p-0"
               >
                 Contact
-              </a>
+              </Link>
             </li>
 
             {/* Mobile Buttons */}

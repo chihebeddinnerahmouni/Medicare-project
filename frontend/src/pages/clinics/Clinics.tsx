@@ -11,11 +11,6 @@ const Clinics = () => {
 
   return (
     <div className="mt-[60px] pt-10 px-4 md:px-10 lg:px-20 xl:max-w-[1700px] xl:mx-auto">
-      {/* <SpecialitiesCont
-        specialite={specialite}
-        setSpecialite={setSpecialite}
-        array={array}
-      /> */}
       <ClinicsCont />
       <div className="pag w-full flex justify-center my-10">
         <Pagination

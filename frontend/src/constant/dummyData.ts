@@ -30,7 +30,7 @@ export interface Clinic {
 export const doctorsMockData: Doctor[] = [
   {
     id: 1,
-    name: "Dr. Ahmed Ben Salah",
+    name: "Ahmed Ben Salah",
     image: "/doctor1.jpg",
     specialite: "Cardiologue",
     experience: 15,
@@ -38,7 +38,7 @@ export const doctorsMockData: Doctor[] = [
   },
   {
     id: 2,
-    name: "Dr. Fatima Ould Khelifa",
+    name: "Fatima Ould Khelifa",
     image: "/doctor2.jpg",
     specialite: "Pédiatre",
     experience: 10,
@@ -46,7 +46,7 @@ export const doctorsMockData: Doctor[] = [
   },
   {
     id: 3,
-    name: "Dr. Youssef Bouzid",
+    name: "Youssef Bouzid",
     image: "/doctor3.jpg",
     specialite: "Neurologue",
     experience: 20,
@@ -54,7 +54,7 @@ export const doctorsMockData: Doctor[] = [
   },
   {
     id: 4,
-    name: "Dr. Imane Zighoud",
+    name: "Imane Zighoud",
     image: "/doctor4.jpg",
     specialite: "Dermatologue",
     experience: 12,
@@ -62,7 +62,7 @@ export const doctorsMockData: Doctor[] = [
   },
   {
     id: 5,
-    name: "Dr. Karim El Hadj",
+    name: "Karim El Hadj",
     image: "/doctor5.jpg",
     specialite: "Chirurgien",
     experience: 18,
@@ -70,7 +70,7 @@ export const doctorsMockData: Doctor[] = [
   },
   {
     id: 6,
-    name: "Dr. Amina Amrani",
+    name: "Amina Amrani",
     image: "/doctor6.jpg",
     specialite: "Gynécologue",
     experience: 8,

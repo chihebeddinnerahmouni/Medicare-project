@@ -25,7 +25,7 @@ const NurseList: React.FC<DoctorListProps> = ({
         {/* <CardInfo list={NurseList} type={"nurses"} /> */}
         {NurseList.length > 0
           ? NurseList.map((nurse, index) => (
-              <CardInfo key={index} item={nurse} type="doctors" />
+              <CardInfo key={index} item={nurse} type="nurses" />
             ))
           : [1, 2, 3, 4, 5, 6].map((index) => (
               <div

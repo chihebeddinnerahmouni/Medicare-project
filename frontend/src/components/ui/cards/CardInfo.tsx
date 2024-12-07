@@ -31,9 +31,9 @@ const CardInfo = ({ item, type }: CardInfoProps) => {
               />
               <div className="mt-3 flex-grow flex flex-col justify-between xl:mt-5">
                 <div className="top items-baseline flex flex-col gap-1.5 xl:gap-2">
-                  <h2 className="text-[10px] bg-blue-100 p-1 rounded-full w-full text-primary ellipsesCss xl:px-2 xl:text-xs">
+                  {/* <h2 className="text-[12px] bg-blue-100 p-1 rounded-full w-full text-primary ellipsesCss xl:px-2 xl:text-xs">
                     {item.address}
-                  </h2>
+                  </h2> */}
                   <h2 className="font-bold xl:text-lg">
                     {type === "nurses" && "Nr. "}
                     {type === "doctors" && "Dr. "}

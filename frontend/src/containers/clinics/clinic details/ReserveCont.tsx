@@ -100,7 +100,7 @@ const ReserveCont = ({ clinic }: any) => {
             <th
               className={`text-base font-semibold text-mainGreen lg:text-[18px] p-2 text-left`}
             >
-              Surgeries
+              Services
             </th>
             <th
               className={`text-sm text-writingGrey font-medium lg:text-base p-2 text-right`}
@@ -115,7 +115,7 @@ const ReserveCont = ({ clinic }: any) => {
               <td
                 className={`text-base font-semibold text-writingMainDark lg:text-[18px] p-2 text-left`}
               >
-                {price.surgory}
+                {price.service}
               </td>
               <td
                 className={`text-sm text-writingGrey font-medium lg:text-base p-2 text-right`}
